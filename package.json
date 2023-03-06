@@ -1,8 +1,7 @@
 {
-  "name": "gpu-response-to-a-mouse-and-touch",
-  "version": "2022.11.14-13.26.07",
-  "license": "MIT",
-  "homepage": "https://codepen.io/foretoo/pen/XWqqgOb",
+  "name": "Earth People Hero",
+  "version": "2023-03-06",
+  "homepage": "https://sannalivijnwexell.github.io/EarthPeopleHero/",
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",
