@@ -19,7 +19,7 @@ let pointSizeScale = Math.min(innerWidth, innerHeight) / 180
 
 
 // ------------------------ //
-// SETUP2
+// SETUP
 
 const scene = new Scene()
 
