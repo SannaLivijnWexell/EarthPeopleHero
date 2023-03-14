@@ -8,13 +8,13 @@ import { TWEEN } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/libs/t
 // CONSTANTS
 
 const WIDTH  = 2600
-const HEIGHT = 1400
+const HEIGHT = 1600
 
 const ASPECT = WIDTH / HEIGHT
 const AMOUNT = WIDTH * HEIGHT
 const PR = Math.min(devicePixelRatio, 2)
-const imgsrc = "ep-copy6.png"
-let pointSizeScale = Math.min(innerWidth, innerHeight) / 162
+const imgsrc = "grid-trans3.png"
+let pointSizeScale = Math.min(innerWidth, innerHeight) / 180
 
 
 
@@ -28,7 +28,7 @@ const camera = new PerspectiveCamera(
 )
 camera.position.set(0, 0, 5)
 
-const f = Math.tan((camera.fov * Math.PI) / 360)
+const f = Math.tan((camera.fov * Math.PI) / 440)
 let originYScale = f * camera.position.distanceTo(scene.position)
 let originXScale = originYScale * camera.aspect
 
@@ -116,14 +116,14 @@ for (let i = 0; i < AMOUNT; i++) {
   const y = (v * 2 - 1)
 
   let len = length(-0.12, 0.44, x, y)
-  len *= len * len * 0.25
+  len *= len * len * 0.0
 
   const rx = (Math.random() * 0.014 - 0.007) * len 
   const ry = (Math.random() * 0.014 - 0.007) * len 
 
   const i4 = i * 4
-  initialPositions[i4 + 0] = (x * ASPECT + rx) * 2
-  initialPositions[i4 + 1] = (y + ry) * 2
+  initialPositions[i4 + 0] = (x * ASPECT + rx) * 3.5
+  initialPositions[i4 + 1] = (y + ry) * 3.5
   initialPositions[i4 + 2] = 0
   initialPositions[i4 + 3] = 1
 
