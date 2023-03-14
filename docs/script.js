@@ -19,7 +19,7 @@ let pointSizeScale = Math.min(innerWidth, innerHeight) / 180
 
 
 // ------------------------ //
-// SETUP
+// SETUP2
 
 const scene = new Scene()
 
@@ -41,6 +41,7 @@ const loader = new TextureLoader()
 const image = loader.load(imgsrc)
 
 const gpu = new GPUComputationRenderer(WIDTH, HEIGHT, renderer)
+
 
 
 
@@ -91,9 +92,9 @@ ctx.fillStyle = "#000"
 ctx.fillRect(0, 0, 32, 32)
 const grd = ctx.createRadialGradient(16, 16, 0, 16, 16, 16)
 grd.addColorStop(0, "#ffff")
-grd.addColorStop(1, "#0000")
+grd.addColorStop(1, "#252525")
 ctx.fillStyle = grd
-ctx.fillRect(0, 0, 32, 32)
+ctx.fillRect(0, 0, 32, 18)
 
 const alpha = new CanvasTexture(ctx.canvas)
 
