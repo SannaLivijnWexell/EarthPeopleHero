@@ -1,7 +1,7 @@
 {
   "name": "Earth People Hero",
   "version": "2023-03-06",
-  "homepage": "https://sannalivijnwexell.github.io/EarthPeopleHero/",
+  "homepage": "https://sannalivijnwexell.github.io/epgrid-particle/",
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",

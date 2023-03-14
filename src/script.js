@@ -5,7 +5,7 @@ import { TWEEN } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/libs/t
 
 
 // ------------------------ //
-// CONSTANTS
+// CONSTANTSX
 
 const WIDTH  = 2600
 const HEIGHT = 1600
